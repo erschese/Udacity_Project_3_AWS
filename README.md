@@ -1,12 +1,22 @@
 #Project: Data Warehouse
 
 ## Project description
-
 In this project, we will build a data warehouses using a AWS redshift cluster.
 To build the data warehouse we will use an ETL pipeline for a database hosted on Redshift. The data is loaded from S3 to staging tables on Redshift and execute SQL statements that create the analytics tables from these staging tables.
 
-###S3 data sets
+### Create redshift cluster
+To create the redshift cluster follow theses steps:
+* enter aws credentials into file '030_delete_redshift_cluster.py'
+* execute '011_create_redshift_cluster.py' to create an aws redshift cluster
+* to avoid aws costs delete the cluster after usage; therefore execute the '020_delete_redshift_cluster.py' file
 
+### Create data base from s3 data
+To create the database make sure you have created the redshift cluster (see chapter 'Create redshift cluster')
+* execute the files 'udacity_project_data_warehouse_aws/aa_create_tables.py'
+* execute the files 'udacity_project_data_warehouse_aws/ab_etl.py'
+* execute the files 'udacity_project_data_warehouse_aws/bb_sql_queries.py'
+
+### S3 data sets
 We'll be working with two datasets that reside in S3. Here are the S3 example links for each dataset:
 
     Song data: s3://udacity-dend/song_data
@@ -15,7 +25,7 @@ We'll be working with two datasets that reside in S3. Here are the S3 example li
     Log data: s3://udacity-dend/log_data
     Log example: http://s3-us-west-2.amazonaws.com/udacity-dend/log_data/2018/11/2018-11-30-events.json
     
-###Table structure
+### Table structure
 Fact table:
 
     songplays - records in event data associated with song plays i.e. records with page NextSong
@@ -37,4 +47,4 @@ Dimension tables:
 
 Database schema:
 
-![alt text](tables.JPG "Logo Title Text 1")
+![alt text](udacity_project_data_warehouse_aws/tables.JPG "Logo Title Text 1")

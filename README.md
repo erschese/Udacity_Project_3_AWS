@@ -47,4 +47,4 @@ Dimension tables:
 
 Database schema:
 
-![alt text](udacity_project_data_warehouse_aws/tables.JPG "Logo Title Text 1")
+![alt text](tables.JPG "Logo Title Text 1")

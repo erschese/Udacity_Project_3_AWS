@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Udacity_Project3_AWS.iml" filepath="$PROJECT_DIR$/.idea/Udacity_Project3_AWS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Udacity_Project_3_AWS.iml" filepath="$PROJECT_DIR$/.idea/Udacity_Project_3_AWS.iml" />
     </modules>
   </component>
 </project>
